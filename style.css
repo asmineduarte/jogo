@@ -1,0 +1,51 @@
+*{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    
+    body{
+        background:#1b0033;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #container{
+        display:flex;
+        gap:20px;
+    }
+    
+    canvas{
+        background:linear-gradient(#3b0080,#130025);
+        border:4px solid gold;
+        border-radius:20px;
+    }
+    
+    #painel{
+        width:200px;
+        background:#2a0050;
+        color:white;
+        padding:20px;
+        border-radius:15px;
+        border:3px solid gold;
+    }
+    
+    #painel h2{
+        color:gold;
+        text-align:center;
+        margin-bottom:20px;
+    }
+    
+    #score{
+        font-size:40px;
+        text-align:center;
+        margin:20px 0;
+        color:#00ffff;
+    }
+    
+    hr{
+        margin:15px 0;
+    }

@@ -1,0 +1,46 @@
+document.addEventListener("keydown",(e)=>{
+
+    const key = e.key.toLowerCase();
+
+    if(key === "a") leftPressed = true;
+    if(key === "d") rightPressed = true;
+
+    // mover para esquerda
+    if(key === "arrowleft"){
+        leftFlipperX -= 15;
+        rightFlipperX -= 15;
+    }
+
+    // mover para direita
+    if(key === "arrowright"){
+        leftFlipperX += 15;
+        rightFlipperX += 15;
+    }
+
+});
+
+
+
+
+
+// flipper esquerdo
+if(
+    ball.x > leftFlipperX &&
+    ball.x < leftFlipperX + flipperWidth &&
+    ball.y > 580 &&
+    ball.y < 640
+){
+    ball.vy = -8;
+    ball.vx -= 2;
+}
+
+// flipper direito
+if(
+    ball.x > rightFlipperX &&
+    ball.x < rightFlipperX + flipperWidth &&
+    ball.y > 580 &&
+    ball.y < 640
+){
+    ball.vy = -8;
+    ball.vx += 2;
+}
